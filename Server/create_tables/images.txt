@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `images` (
+  `post_id` varchar(16) NOT NULL,
+  `file_name` varchar(20) NOT NULL,  
+  PRIMARY KEY (`post_id`, `file_name`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;

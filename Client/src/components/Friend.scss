@@ -1,0 +1,75 @@
+.friend{
+    width: 442px;
+    height: 40px;
+    border: 1px solid #dddfe2;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    .friendName{
+        align-self: center;
+        color: #385898;
+        font-weight: bold;
+        margin-left: 10px;
+        &:hover{ cursor: pointer; }
+    }
+
+    .friendButtons{
+        display: flex;
+        align-items: center;
+
+        .addFriendButton{
+            margin-right: 2px;
+            padding: 6px;
+            height: 28px;
+            margin-bottom: 0;
+        }
+
+        .removeFriendButton{
+            &:hover{background-color: rgb(255, 199, 199);}
+            margin-right: 2px;
+            padding: 6px;
+            height: 28px;
+            margin-bottom: 0;
+            background-color: white;
+            border: 1px solid red;
+            color: red;
+        }
+
+        .inviteButton{
+            margin-right: 10px;
+            padding: 6px;
+            height: 28px;
+            margin-bottom: 0;
+        }
+
+        .playButton{
+            &:hover{background-color: rgb(255, 229, 199);}
+            margin-right: 2px;
+            padding: 6px;
+            height: 28px;
+            margin-bottom: 0;
+            background-color: white;
+            border: 1px solid orange;
+            color: orange;
+        }
+
+        .cancelButton{
+            &:hover{background-color: rgb(255, 199, 199);}
+            margin-right: 2px;
+            padding: 6px;
+            height: 28px;
+            margin-bottom: 0;
+            background-color: white;
+            border: 1px solid red;
+            color: red;
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+    .friend{
+        width: 100%;
+    }
+}

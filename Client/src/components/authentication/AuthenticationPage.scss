@@ -1,0 +1,28 @@
+.authentication{
+  padding-top: 50px;
+}
+
+button{
+  background-color: #a0b3d8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 50px;
+  margin: 15px 5px 15px 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 10px;
+  margin: 0 1px 2px 0;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #5476b9;
+}
+button:focus {outline:0;}
+.pushed{
+  background-color: #4267B2;
+}

@@ -1,0 +1,73 @@
+.mainPage{
+    display: grid;
+    grid-template-columns: auto 625px auto;
+    grid-row-gap: 10px;
+
+    .headerWrapper{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .newPost{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border: 1px solid #dddfe2;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column;
+        background-color: white;
+        overflow: hidden;
+        
+        .newPostHeader{
+            border-bottom: 1px solid #dddfe2;
+            display: flex;
+            background-color: #F5F6F7;
+            padding: 13px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #585D63;
+        }
+
+        .newPostBody{
+            padding: 11px 7px 52px 7px;
+            height: 120px;
+            .newPostText{
+                &:focus {outline:0;}
+                resize: none;
+                width: -webkit-fill-available;
+                height: 100%;
+                border: none;
+                display:block;
+                font-size: 14px;
+            }
+            .newPostButton{
+                margin-top: 6px;
+                float: right;
+            }
+            .newPostPermission{
+                margin-top: 12px;
+                margin-right: 10px;
+                float: right;
+            }
+            .newPostImages{
+                float: left;
+                margin-top: 18px;
+            }
+        }
+    }
+
+    .postWrapper{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .mainPage{
+        display: flex;
+        flex-flow: column;
+        .newPost{
+            margin-bottom: 10px;
+        }
+    }
+}

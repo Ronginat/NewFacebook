@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `friends` (
+  `user_req` varchar(16) NOT NULL,
+  `user_res` varchar(16) NOT NULL,
+  PRIMARY KEY (`user_req`, `user_res`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;

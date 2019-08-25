@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `likes` (
+  `username` varchar(16) NOT NULL,
+  `post_id` varchar(16) NOT NULL,  
+  PRIMARY KEY (`username`, `post_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;

@@ -1,0 +1,62 @@
+.post{
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    padding: 20px 13px;
+    margin-bottom: 10px;
+
+    .author{
+        font-size: 18px;
+        align-self: flex-start;
+        color: #385898;
+        font-weight: bold;
+        margin-bottom: 2px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &:hover{ cursor: pointer; }
+    }
+
+    .postDate{
+        align-self: flex-start;
+        font-size: 12px;
+        color: #585D63;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .content{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .likes{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 16px;
+        .likeNumber{
+            align-self: flex-start;
+            margin-bottom: 11px;
+            display: flex;
+            align-items: baseline;
+        }
+        .likeButton{
+            align-self: flex-start;
+            margin-top: 17px;
+            button{
+                background-color: white;
+                border: 1px solid #a0b3d8;
+                color: #385898;
+                &.pushed{
+                    background-color: #4267B2;
+                    color: white;
+                }
+            }
+            
+
+        }
+    }
+}

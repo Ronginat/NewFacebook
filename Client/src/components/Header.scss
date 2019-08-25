@@ -1,0 +1,92 @@
+.Header{
+    background-color: #4267B2;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 33;
+
+    .search{
+        height: 26px;
+        border-radius: 5px;
+        position: relative;
+        .input{
+            line-height: 19px;
+            width: 440px;
+            font-size: 16px;
+        }
+        .friendsList{
+            position: absolute;
+            top: 25px;
+        }
+    }
+
+    .navigate{
+        color: white;
+        display: flex;
+        &:hover{
+            cursor: pointer;
+        }
+        .navigateButton{
+            font-size: 15px;
+            margin: 10px;
+        }
+    }
+    .navigateLogOut{
+        color: white;
+        display: flex;
+        &:hover{
+            cursor: pointer;
+        }
+        font-size: 15px;
+    }
+}
+
+.headerPlaceholder{
+    height: 42px;
+}
+
+@media (max-width: 800px) {
+    .Header{
+        display: flex;
+        flex-flow: column;
+        height: 92px;
+
+        .search{
+            width: 100%;
+            margin-bottom: 14px;
+            .input{
+                width: 95%;
+                float: left;
+                margin-left: 10px;
+                font-size: 20px;
+            }
+            .friendsList{
+                width: 95%;
+                margin-left: 10px;
+            }
+        }
+    
+        .navigate{
+            align-self: baseline;
+            .navigateButton{
+                font-size: 20px;
+            }
+        }
+        
+        .navigateLogOut{
+            position: absolute;
+            top: 11px;
+            right: 12px;
+            font-size: 20px;
+        }
+    }
+    
+    .headerPlaceholder{
+        height: 92px;
+    }
+}
+
